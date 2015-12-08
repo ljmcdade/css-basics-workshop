@@ -1,1 +1,36 @@
 /* write your css here */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+.dialog-box {
+    background-color: #d2d2d2;
+    padding: 8px;
+    position: relative;
+}
+
+.dialog-box__title {
+    margin-top: 0;
+
+}
+.dialog-box__content {
+    background-color: #f2f2f2;
+    padding: 1em;
+}
+.dialog-box__close {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    /*float: right;*/
+    /*right: 10px;*/
+    border: 2px solid white;
+    background-color: tomato;
+    width: 24px;
+    height: 24px;
+}
