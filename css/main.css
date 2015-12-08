@@ -1,1 +1,47 @@
 /* write your css here */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+   
+    width: 33.33%;
+    float: left;
+}
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+img {
+      width: 100%;
+      
+   }
+}
+
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+img {
+      width: 50%;
+      
+   }
+}
+
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+img {
+      width: 33.3%;
+      
+   }
+}
+
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+img {
+      width: 25%;
+     
+   }
+}
