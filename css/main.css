@@ -1,1 +1,71 @@
 /* write your css here */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+section .major-section {
+    
+    width:100%;
+    float:clear;
+ 
+} 
+
+section .paragraphs {
+    float: left;
+    padding: 0.5em;
+    width: 25%;
+}
+
+ul {
+    margin:0 auto;
+  
+    
+    
+}
+
+section .list{
+    text-align: center;
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width : 400px) {
+   /* Smartphone view: 1 column */
+li {
+      width: 100%;
+      
+   }
+section .paragraphs{
+       min-width: 400px;
+   }
+}
+
+@media only screen and (max-width : 800px) and (min-width : 481px) {
+   /* Tablet view: 2 columns */
+li {
+      width: 50%;
+   }
+section .paragraphs {
+    min-width: 300px;
+}
+}
+
+@media only screen and  (min-width : 801px) {
+   /* Desktop view: 4 columns */
+li {
+      width: 25%;
+      
+   }
+}
+
